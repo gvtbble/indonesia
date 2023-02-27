@@ -10,14 +10,12 @@ html,body{
 	overflow: hidden;
 	min-height: 100%;
 }
-// .container{
-// 	padding: 0 228.5px;
-// 	// max-width: 1464px;
-// 	// margin: 0 auto;
-// 	@media(max-width:1400px) {
-// 		padding: 0 100px;
-// 	}
-// }
+.container{
+	padding: 0 228.5px;
+	// @media(max-width:1400px) {
+	// 	padding: 0 100px;
+	// }
+}
 
 .page{
 	position: absolute;
@@ -317,6 +315,10 @@ html,body{
 }
 
 .block__small {
+	padding-bottom: 250px;
+	@media(max-width: 1400px) {
+		padding-bottom: 50px;
+	}
 }
 .block {
 	background: #000;
@@ -325,26 +327,25 @@ html,body{
 		display: flex;
 	}
 	&__column{
-		flex:0 1 50%;
+		// flex:0 1 50%;
 	}
 	&__item{
 		text-align: left;
 		padding-top: 87px;
 		display: flex;
 		flex-direction: column;
-		padding-left: 232px;
-		padding: 87px 229.5px 331px 0px;
+		padding: 87px 0px 0px 230px;
 		@media(max-width:1536px) {
-			padding: 40px 100px 150px 100px;
+			padding: 40px 0px 0px 100px;
 		}
 	}
 	&__img {
 		position: relative;
 		z-index: 3;
-		height: 82%;
-		width: 63%;
+		height: 52%;
+		width: 118%;
 		top: -87px;
-		left: 228.5px;
+		left: -53px;
 		// &:before{
 		// 	content: '';
 		// 	background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 77.78%);
@@ -415,14 +416,20 @@ html,body{
 }
 
 .block__big {
+	padding-bottom: 342px;
 	
 }
 .big {
 	background: #000;
+	&__body{
+		position: relative;
+		z-index: 5;
+		top: -37vh;
+	}
 	&__subbtitle {
 		text-align: center;
 		padding-bottom: 24px;
-		padding-top: 54%;
+		
 		&:after {
 			content: '';
 			position: relative;
@@ -441,11 +448,16 @@ html,body{
 		text-align: center;
 	}
 }
-.container {
-	padding: 0 230px;
-}
 .big__img {
-	padding: -1px 0 27% 0;
+	margin-bottom: -410px;
+	img{
+		display: block;
+		max-width: 100%;
+		height: 100%;
+		@media(max-width:1400px) {
+
+		}
+	}
 }
 .ibg {
 	
@@ -467,9 +479,17 @@ html,body{
 	line-height: 32px;
 	color: #FFFFFF;
 	padding: 0 264px;
+	padding-bottom: 39px;
 	span{
 		display: block;
 	}
+}
+
+.block__column_reverse {
+	position: relative;
+}
+.block__item_reverse {
+	padding: 0 230px 0 0;
 }
 
 

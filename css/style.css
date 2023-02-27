@@ -13,6 +13,10 @@ html, body {
   min-height: 100%;
 }
 
+.container {
+  padding: 0 228.5px;
+}
+
 .page {
   position: absolute;
   width: 100%;
@@ -324,6 +328,15 @@ html, body {
   text-align: right;
 }
 
+.block__small {
+  padding-bottom: 250px;
+}
+@media (max-width: 1400px) {
+  .block__small {
+    padding-bottom: 50px;
+  }
+}
+
 .block {
   background: #000;
   text-align: center;
@@ -331,29 +344,25 @@ html, body {
 .block__row {
   display: flex;
 }
-.block__column {
-  flex: 0 1 50%;
-}
 .block__item {
   text-align: left;
   padding-top: 87px;
   display: flex;
   flex-direction: column;
-  padding-left: 232px;
-  padding: 87px 229.5px 331px 0px;
+  padding: 87px 0px 0px 230px;
 }
 @media (max-width: 1536px) {
   .block__item {
-    padding: 40px 100px 150px 100px;
+    padding: 40px 0px 0px 100px;
   }
 }
 .block__img {
   position: relative;
   z-index: 3;
-  height: 82%;
-  width: 63%;
+  height: 52%;
+  width: 118%;
   top: -87px;
-  left: 228.5px;
+  left: -53px;
 }
 .block__title {
   font-weight: 700;
@@ -387,13 +396,21 @@ html, body {
   height: 18px;
 }
 
+.block__big {
+  padding-bottom: 342px;
+}
+
 .big {
   background: #000;
+}
+.big__body {
+  position: relative;
+  z-index: 5;
+  top: -37vh;
 }
 .big__subbtitle {
   text-align: center;
   padding-bottom: 24px;
-  padding-top: 54%;
 }
 .big__subbtitle:after {
   content: "";
@@ -411,14 +428,14 @@ html, body {
   text-align: center;
 }
 
-.container {
-  padding: 0 230px;
-}
-
 .big__img {
-  padding: -1px 0 27% 0;
+  margin-bottom: -410px;
 }
-
+.big__img img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
 .big__title {
   text-align: center;
   padding-top: 24px;
@@ -436,9 +453,18 @@ html, body {
   line-height: 32px;
   color: #FFFFFF;
   padding: 0 264px;
+  padding-bottom: 39px;
 }
 .big__text span {
   display: block;
+}
+
+.block__column_reverse {
+  position: relative;
+}
+
+.block__item_reverse {
+  padding: 0 230px 0 0;
 }
 
 .slider {
